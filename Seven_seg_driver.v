@@ -34,7 +34,7 @@ module seven_seg_driver(
     
     /*
     * Generate slow clk of 1000Hz from 1MHz
-    * No of cycles = 0.5*(1MHz/1000Hz)=50,000
+    * No of cycles = 0.5*(100MHz/1000Hz)=50,000
     */
     always @(posedge clk) begin 
         count <= count +1;
